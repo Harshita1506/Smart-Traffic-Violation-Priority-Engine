@@ -19,6 +19,18 @@ A real-time AI dashboard for monitoring traffic violations and density.
    ```bash
    streamlit run app.py
    ```
+   ## Model & Video Files
+
+YOLOv8 models and traffic videos are excluded from the repository
+due to GitHub size limits.
+
+To run the project:
+
+1. Download YOLO models:
+```bash
+pip install ultralytics
+yolo download model=yolov8n.pt
+
 
 ## Video File
 To use a real video:
