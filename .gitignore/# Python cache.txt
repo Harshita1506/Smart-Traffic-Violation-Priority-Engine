@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# ML models (too large for GitHub)
+models/*.pt
+
+# Video assets
+assets/*.mp4
+assets/*.avi
+assets/*.mov
+
+# Editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

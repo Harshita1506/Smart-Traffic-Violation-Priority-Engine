@@ -1,0 +1,15 @@
+# Ultralytics YOLO, AGPL-3.0 license
+# Custom BoT-SORT High-Accuracy Configuration
+
+tracker_type: botsort  # tracker type, ['botsort', 'bytetrack']
+track_high_thresh: 0.5  # threshold for the first association
+track_low_thresh: 0.1  # threshold for the second association
+new_track_thresh: 0.6  # threshold for init new track if the detection does not match any existing track
+track_buffer: 60  # buffer to calculate the time when to remove the tracked object (60 frames = ~2s)
+match_thresh: 0.8  # threshold for matching tracks
+# BoT-SORT settings
+gmc_method: sparseOptFlow  # method of global motion compensation
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+with_reid: False
+fuse_score: False # Required parameter for BoT-SORT
